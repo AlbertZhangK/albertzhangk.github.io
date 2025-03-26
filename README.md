@@ -56,10 +56,5 @@
         </ul>
     </div>
 
-    <div class="section">
-        <h2>Welcome</h2>
-        <p>I am a Ph.D. student at Peking University, studying political theory and history of political thought.</p>
-        <p>My research interests include Tocqueville, Machiavelli, democracy theory, and republican theory.</p>
-    </div>
 </body>
 </html>
