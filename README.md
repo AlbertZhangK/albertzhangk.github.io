@@ -17,7 +17,6 @@
         <img src="4b932ec969a40718bec70946dda41b86.jpeg" alt="张开的照片">
         <p>Email: <a href="mailto:albertk@pku.edu.cn">albertk@pku.edu.cn</a></p>
         <p>浙江缙云人，北京大学政府管理学院博士研究生</p>
-        <p>研究方向：政治理论和政治思想史</p>
     </div>
 
     <div class="section">
