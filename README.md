@@ -102,8 +102,14 @@
         </ol>
     </div>
 
+<div class="section" style="text-align: center;">
+    <img src="rs=w-800,cg-true.webp" alt="照片1">
+    <p style="font-style: italic;">Il m’y voilà tranquille au fond de l’abyîme.</p>
+    <p>身处地狱之深，我却最宁静。</p>
+</div>
 
-    <div class="section">
+
+   <div class="section">
         <h2>博客</h2>
         <ul id="blog-list">
             <li><a href="#">示例博客文章 1</a></li>
@@ -111,11 +117,6 @@
         </ul>
     </div>
 
-   <div class="section">
-        <p>Il m’y voilà tranquille au fond de l’abyîme.</p>
-        <p>身处地狱之深，我却最宁静。</p>
-        <img src="rs=w-800,cg-true.webp" alt="照片1">
-    </div>
 
 </body>
 </html>
