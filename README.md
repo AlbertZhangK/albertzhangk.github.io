@@ -11,8 +11,8 @@
             margin: 0; /* 移除多余的 margin */
             padding: 20px; 
             max-width: 800px; 
-            margin-left: auto; 
-            margin-right: auto; /* 确保页面居中 */
+            margin-left: 50px; 
+            margin-right: 50px; /* 确保页面居中 */
         }
 
         h1, h2 { 
