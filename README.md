@@ -1,14 +1,61 @@
 <html lang="zh-CN">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>张开的个人网站</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; max-width: 800px; margin: auto; }
-        h1, h2 { color: #333; }
-        .container { text-align: center; }
-        .section { margin-top: 20px; padding: 10px; border-bottom: 1px solid #ccc; }
-        img { max-width: 100%; height: auto; display: block; margin: 10px auto; }
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; /* 移除多余的 margin */
+            padding: 20px; 
+            max-width: 800px; 
+            margin-left: auto; 
+            margin-right: auto; /* 确保页面居中 */
+        }
+
+        h1, h2 { 
+            color: #333; 
+        }
+
+        .container { 
+            text-align: center; 
+        }
+
+        .section { 
+            margin-top: 20px; 
+            padding: 10px; 
+            border-bottom: 1px solid #ccc; 
+        }
+
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 10px auto; 
+        }
+
+        /* 移动端适配 */
+        @media screen and (max-width: 768px) {
+            body {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            .container {
+                text-align: center;
+            }
+
+            .section {
+                padding: 5px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -16,7 +63,7 @@
         <h1>张开</h1>
         <img src="4b932ec969a40718bec70946dda41b86.jpeg" alt="张开的照片">
         <p>Email: <a href="mailto:albertk@pku.edu.cn">albertk@pku.edu.cn</a></p>
-        <p>浙江缙云人，北京大学政府管理学院博士研究生</p>
+        <p>张开，浙江缙云人，北京大学政府管理学院博士候选人，研究领域为政治理论和政治思想史，尤其关注托克维尔（法国自由主义）和马基雅维利。我的相关研究发表在《政治学研究》《北大政治学评论》《云南大学学报（社会科学版）》上。我主要关注西方近代以来思想史的政治概念及其背后的德性意涵，以及中国近代政治思想史中的国家整合与西学问题。我希望将历史文本有机地转化为当代的智识资源，为现代人的政治思考提供一些有益的借鉴。</p>
     </div>
 
     <div class="section">
@@ -43,17 +90,18 @@
   <div class="section">
         <h2>语言能力</h2>
         <ol>
-            <li>汉语（母语）、英语（流利）、法语（熟练）</li>
+            <p>汉语（母语）、英语（流利）、法语（熟练）</p>
         </ol>
     </div>
 
-    <div class="section">
-        <h2>荣誉奖励</h2>
-        <ul>
-            <li>2022 北京市普通高等学校优秀毕业生</li>
-            <li>2022 北京大学优秀毕业生</li>
-        </ul>
+
+<div class="section">
+        <h2>会议发言</h2>
+        <ol>
+            <p>《时间中的政治德性：马基雅维利的“永恒共和国”问题》，2023年12月9-10日，2023年政治思想史论坛｜中外政治思想史中的“君主镜鉴”传统，北京大学政府管理学院。</p>
+        </ol>
     </div>
+
 
     <div class="section">
         <h2>博客</h2>
@@ -61,6 +109,12 @@
             <li><a href="#">示例博客文章 1</a></li>
             <li><a href="#">示例博客文章 2</a></li>
         </ul>
+    </div>
+
+   <div class="section">
+        <p>Il m’y voilà tranquille au fond de l’abyîme.</p>
+        <p>身处地狱之深，我却最宁静。</p>
+        <img src="rs=w-800,cg-true.webp" alt="照片1">
     </div>
 
 </body>
