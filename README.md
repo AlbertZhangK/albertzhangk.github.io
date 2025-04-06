@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8" />
@@ -26,6 +25,14 @@
         .container {
             text-align: center;
         }
+        .container p {
+    text-align: center;
+}
+
+.container img {
+    display: block;
+    margin: 10px auto;
+}
 
         .section {
             margin-top: 20px;
