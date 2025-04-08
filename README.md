@@ -23,15 +23,15 @@
         }
 
         .container {
-            text-align: center;
+            text-align: left;
         }
         .container p {
-    text-align: center;
+    text-align: left;
 }
 
 .container img {
     display: block;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
         .section {
@@ -45,7 +45,7 @@
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 10px auto;
+            margin: 0 auto;
         }
 
         p, li {
@@ -123,7 +123,8 @@
 
     <div class="section">
         <h2>会议发言</h2>
-        <p>《时间中的政治德性：马基雅维利的“永恒共和国”问题》，2023年12月9-10日，2023年政治思想史论坛｜中外政治思想史中的“君主镜鉴”传统，北京大学政府管理学院。</p>
+        <p>《时间中的政治德性：马基雅维利的“永恒共和国”问题》，2023年12月9-10日，2023年政治思想史论坛｜中外政治思想史中的“君主镜鉴”传统，北京，北京大学政府管理学院。</p>
+        <p>《民主的边疆：托克维尔论美国的种族问题》，第四届“国家+”论坛——“边界/边疆”学术研讨会，2025年4月6日，昆明，北京大学中国政治学研究中心、云南民族大学政治与公共管理学院（人民武装学院）。</p>
     </div>
 
     <div class="section" style="text-align: center;">
