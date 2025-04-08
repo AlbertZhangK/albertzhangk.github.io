@@ -11,7 +11,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0 auto;
+            margin: 10px auto;
             padding: 20px;
             max-width: 800px;
             word-break: break-word;
@@ -23,29 +23,29 @@
         }
 
         .container {
-            text-align: left;
+            text-align: justify;
         }
         .container p {
-    text-align: left;
-}
+    text-align: justify;
+        }
 
 .container img {
     display: block;
-    margin: 0 auto;
-}
+    margin: 10px auto;
+        }
 
         .section {
             margin-top: 20px;
             padding: 10px 0;
             border-bottom: 1px solid #ccc;
-            text-align: left;
+            text-align: justify;
         }
 
         img {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 10px auto;
         }
 
         p, li {
@@ -89,7 +89,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>张开</h1>
+        <h1></h1>
         <img src="4b932ec969a40718bec70946dda41b86.jpeg" alt="张开的照片" />
         <p>Email: <a href="mailto:albertk@pku.edu.cn">albertk@pku.edu.cn</a></p>
         <p>张开，浙江缙云人，北京大学政府管理学院博士候选人，研究领域为政治理论和政治思想史，尤其关注托克维尔（法国自由主义）和马基雅维利。我的相关研究发表在《政治学研究》《北大政治学评论》《云南大学学报（社会科学版）》上。我主要关注西方近代以来思想史的政治概念及其背后的德性意涵，以及中国近代政治思想史中的国家整合与西学问题。我希望将历史文本有机地转化为当代的智识资源，为现代人的政治思考提供一些有益的借鉴。</p>
