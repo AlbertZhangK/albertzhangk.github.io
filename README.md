@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
@@ -34,21 +33,20 @@
     }
 
     .intro-section {
-      display: flex;
-      align-items: flex-start;
+      display: block;
       gap: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     .intro-section img {
-      width: 180px;
+      width: 100%
+      max-width: 180px;
       height: auto;
-      border-radius: 4px;
-      flex-shrink: 0;
+      margin-bottom: 20px;
+      display: block
     }
 
     .intro-text {
-      flex: 1;
       text-align: justify;
     }
 
@@ -104,14 +102,14 @@
     <h2 class="en" style="display:none">Education</h2>
     <p class="zh">2022.9- 博士研究生，北京大学政府管理学院</p>
     <p class="zh">2018.9-2022.7 法学学士，北京大学政府管理学院</p>
-    <p class="zh">2025.8-2026.8 访问研究生，哈佛大学肯尼迪学院阿什中心（拟）</p>
-    <p class="en" style="display:none">2022.9– Ph.D. Student, School of Government, Peking University<br />2018.9–2022.7 LL.B., School of Government, Peking University<br />2025.8–2026.8 Visiting Fellow, Ash Center, Harvard Kennedy School (planned)</p>
+    <p class="zh">2025.8-2026.8 访问学者，哈佛大学肯尼迪学院阿什中心（即将进行）</p>
+    <p class="en" style="display:none">2022.9– Ph.D. Student, School of Government, Peking University<br />2018.9–2022.7 LL.B., School of Government, Peking University<br />2025.8–2026.8 Visiting Ph.D. Student Fellow，Rajawali Institute for Asia Fellowship, Ash Center, Harvard Kennedy School (forthcoming)</p>
   </div>
 
   <div class="section">
     <h2 class="zh">研究领域</h2>
     <h2 class="en" style="display:none">Research Interests</h2>
-    <p class="zh">政治理论；西方政治思想史；中国近代政治思想史；比较政治思想史。主要关注民主理论、种族、殖民主义和帝国主义、宗教与政治关系等话题。</p>
+    <p class="zh">政治理论；西方政治思想史（尤其是19世纪上半叶法国政治思想）；中国近代政治思想史（尤其是19世纪末到五四之前）；比较政治思想史。主要关注民主理论、种族、殖民主义和帝国主义、宗教与政治关系等话题。</p>
     <p class="en" style="display:none">Political theory; history of Western political thought; modern Chinese political thought; comparative political thought. Key topics include democracy, race, colonialism and empire, and religion-politics relations.</p>
   </div>
 
@@ -141,8 +139,8 @@
     <h2 class="zh">会议发言</h2>
     <h2 class="en" style="display:none">Conference Presentations</h2>
     <ol>
-      <li class="zh">《时间中的政治德性：马基雅维利的“永恒共和国”问题》，2023年12月，北京大学政府管理学院。</li>
-      <li class="zh">《民主的边疆：托克维尔论美国的种族问题》，2025年4月，第四届“国家+”论坛，云南民族大学。</li>
+      <li class="zh">《时间中的政治德性：马基雅维利的“永恒共和国”问题》，2023年12月9-10日，2023年政治思想史论坛｜中外政治思想史中的“君主镜鉴”传统，北京，北京大学政府管理学院。</li>
+      <li class="zh">《民主的边疆：托克维尔论美国的种族问题》，第四届“国家+”论坛——“边界/边疆”学术研讨会，2025年4月6日，昆明，北京大学中国政治学研究中心、云南民族大学政治与公共管理学院（人民武装学院）。</li>
       <li class="en" style="display:none">"Political Virtue in Time: The Problem of the 'Eternal Republic' in Machiavelli", Dec 2023, School of Government, Peking University.</li>
       <li class="en" style="display:none">"The Frontier of Democracy: Tocqueville on Race in America", Apr 2025, 4th 'Nation+' Forum, Yunnan Minzu University.</li>
     </ol>
@@ -154,6 +152,12 @@
     <p class="zh">汉语（母语）、英语（流利）、法语（熟练）</p>
     <p class="en" style="display:none">Chinese (native), English (fluent), French (proficient)</p>
   </div>
+
+  <div class="section" style="text-align: center;">
+        <img src="rs=w-800,cg-true.webp" alt="照片1" />
+        <p style="font-style: italic;">Il m’y voilà tranquille au fond de l’abyîme.</p>
+        <p>身处地狱之深，我却最宁静。</p>
+    </div>
 
   <script>
     function toggleLang() {
