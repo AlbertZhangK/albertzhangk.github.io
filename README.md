@@ -118,19 +118,16 @@
     <h2 class="en" style="display:none">Publications</h2>
     <ol>
       <li>
-        <span class="zh">段德敏、张开：《殖民扩张、种族主义与民主——托克维尔的“另一个美国”》，《政治学研究》，2023年第6期，第161-174页。</span>
-        <span class="en" style="display:none">Duan Demin & Zhang Kai, "Colonial Expansion, Racism, and Democracy: Tocqueville’s 'Other America'," *Political Science Research*, no. 6 (2023): 161–174.</span>
-        <a href="#" target="_blank">最终发表.pdf</a>
+        <span class="zh"><a href="最终发表.pdf" target="_blank">段德敏、张开：《殖民扩张、种族主义与民主——托克维尔的“另一个美国”》，《政治学研究》，2023年第6期，第161-174页。</a></span>
+        <span class="en" style="display:none"><a href="最终发表.pdf" target="_blank">Duan Demin & Zhang Kai, "Colonial Expansion, Racism, and Democracy: Tocqueville’s 'Other America'," *Political Science Research*, no. 6 (2023): 161–174.</a></span>
       </li>
       <li>
-        <span class="zh">段德敏、张开：《马基雅维利政治思想中的“永恒共和国”问题》，《云南大学学报（社会科学版）》，2023年第4期，第76-86页。</span>
+        <span class="zh"><a href="马基雅维利政治思想中的“永恒共和国”问题_段德敏.pdf" target="_blank">段德敏、张开：《马基雅维利政治思想中的“永恒共和国”问题》，《云南大学学报（社会科学版）》，2023年第4期，第76-86页。</a></span>
         <span class="en" style="display:none">Duan Demin & Zhang Kai, "The Problem of the 'Eternal Republic' in Machiavelli’s Political Thought," *Journal of Yunnan University (Social Sciences)*, no. 4 (2023): 76–86.</span>
-        <a href="#" target="_blank">马基雅维利政治思想中的“永恒共和国”问题_段德敏.pdf</a>
       </li>
       <li>
-        <span class="zh">张开、段德敏：《政治现实主义视角中的灾难与命运》，《北大政治学评论》，第14辑，商务印书馆，2023年，第253-263页。</span>
+        <span class="zh"><a href="政治现实主义视角中的灾难与...变论时代中的政治现实主义》_张开.pdf" target="_blank">张开、段德敏：《政治现实主义视角中的灾难与命运》，《北大政治学评论》，第14辑，商务印书馆，2023年，第253-263页。</a></span>
         <span class="en" style="display:none">Zhang Kai & Duan Demin, "Catastrophe and Fortune from a Political Realist Perspective," *Peking University Political Science Review*, Vol. 14 (2023): 253–263.</span>
-        <a href="#" target="_blank">政治现实主义视角中的灾难与...变论时代中的政治现实主义》_张开.pdf</a>
       </li>
     </ol>
   </div>
