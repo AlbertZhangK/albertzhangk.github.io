@@ -92,8 +92,8 @@
       <h1 class="zh">张开</h1>
       <h1 class="en" style="display:none">Zhang Kai</h1>
       <p>Email: <a href="mailto:albertk@pku.edu.cn">albertk@pku.edu.cn</a></p>
-      <p class="zh">张开，浙江缙云人，北京大学政府管理学院博士候选人，研究领域为政治理论和政治思想史，尤其关注托克维尔（法国自由主义）和马基雅维利。我的相关研究发表在《政治学研究》《北大政治学评论》《云南大学学报（社会科学版）》上。我主要关注西方近代以来自由主义和共和主义思想史的“自由”概念及其背后的“德性”意涵，以及中国近代政治思想史中的国家整合与西学问题。我希望将历史文本有机地转化为当代的智识资源，为现代人的政治思考提供一些有益的借鉴。</p>
-      <p class="en" style="display:none">Zhang Kai is a Ph.D. candidate at the School of Government, Peking University, from Jinyun, Zhejiang Province. His research focuses on political theory and the history of political thought, with particular interest in Alexis de Tocqueville (French liberalism) and Niccolò Machiavelli. His work has been published in several Chinese academic journals. He is primarily concerned with the concepts of "liberty" and "virtue" in the intellectual history of western liberalism and republicanism, as well as state integration and the reception of Western learning in modern Chinese political thought. He aims to transform historical texts into intellectual resources for the present, offering insights to contemporary political reflection.</p>
+      <p class="zh">张开，浙江缙云人，北京大学政府管理学院博士候选人，研究领域为政治理论和政治思想史，尤其关注托克维尔和马基雅维利。我的相关研究发表在《政治学研究》《北大政治学评论》《云南大学学报（社会科学版）》上。我主要关注西方近代以来自由主义和共和主义思想史的“自由”概念及其背后的“德性”意涵，以及中国近代政治思想史中的国家整合与西学问题。我希望将历史文本有机地转化为当代的智识资源，为现代人的政治思考提供一些有益的借鉴。</p>
+      <p class="en" style="display:none">Zhang Kai is a Ph.D. candidate at the School of Government, Peking University, from Jinyun, Zhejiang Province. His research focuses on political theory and the history of political thought, with particular interest in Alexis de Tocqueville and Niccolò Machiavelli. His work has been published in several Chinese academic journals. He is primarily concerned with the concepts of "liberty" and "virtue" in the intellectual history of western liberalism and republicanism, as well as state integration and the reception of Western learning in modern Chinese political thought. He aims to transform historical texts into intellectual resources for the present, offering insights to contemporary political reflection.</p>
     </div>
   </div>
 
@@ -123,11 +123,11 @@
       </li>
       <li>
         <span class="zh"><a href="马基雅维利政治思想中的“永恒共和国”问题_段德敏.pdf" target="_blank">段德敏、张开：《马基雅维利政治思想中的“永恒共和国”问题》，《云南大学学报（社会科学版）》，2023年第4期，第76-86页。</a></span>
-        <span class="en" style="display:none"><a href="马基雅维利政治思想中的“永恒共和国”问题_段德敏.pdf" target="_blank">Demin Duan and Kai Zhang, “The Problem of 'Perpetual Republic' in Machiavelli's Thought”, The Journal of Yunnan University Social Sciences Edition, no. 3, 2023, pp. 76-86.</span>
+        <span class="en" style="display:none"><a href="马基雅维利政治思想中的“永恒共和国”问题_段德敏.pdf" target="_blank">Demin Duan and Kai Zhang, “The Problem of 'Perpetual Republic' in Machiavelli's Thought”, The Journal of Yunnan University Social Sciences Edition, no. 3, 2023, pp. 76-86.</a></span>
       </li>
       <li>
         <span class="zh"><a href="政治现实主义视角中的灾难与...变论时代中的政治现实主义》_张开.pdf" target="_blank">张开、段德敏：《政治现实主义视角中的灾难与命运》，《北大政治学评论》，第14辑，商务印书馆，2023年，第253-263页。</a></span>
-        <span class="en" style="display:none"><a href="政治现实主义视角中的灾难与...变论时代中的政治现实主义》_张开.pdf" target="_blank">Kai Zhang and Demin Duan, “Disaster and Fortune from the Perspective of Political Realism: on Allison McQueen's Political Realism in Apocalyptic Times”, Peking University Political Science Review, vol. 14, 2023, pp. 253-263.</span>
+        <span class="en" style="display:none"><a href="政治现实主义视角中的灾难与...变论时代中的政治现实主义》_张开.pdf" target="_blank">Kai Zhang and Demin Duan, “Disaster and Fortune from the Perspective of Political Realism: on Allison McQueen's Political Realism in Apocalyptic Times”, Peking University Political Science Review, vol. 14, 2023, pp. 253-263.</a></span>
       </li>
     </ol>
   </div>
@@ -167,5 +167,3 @@
       toggleBtn.innerText = toggleBtn.innerText === 'EN' ? '中文' : 'EN';
     }
   </script>
-</body>
-</html>
