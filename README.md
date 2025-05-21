@@ -103,7 +103,7 @@
     <p class="zh">2022.9- 博士研究生，北京大学政府管理学院</p>
     <p class="zh">2018.9-2022.7 法学学士，北京大学政府管理学院</p>
     <p class="zh">2025.8-2026.8 访问学者，哈佛大学肯尼迪学院阿什中心（即将进行）</p>
-    <p class="en" style="display:none">2022.9– Ph.D. Student, School of Government, Peking University<br />2018.9–2022.7 LL.B., School of Government, Peking University<br />2025.8–2026.8 Visiting Ph.D. Student Fellow，Rajawali Institute for Asia Fellowship, Ash Center, Harvard Kennedy School (forthcoming)</p>
+    <p class="en" style="display:none">2022.9– Ph.D. Student, School of Government, Peking University<br />2018.9–2022.7 BA, Politics and Public Administration, School of Government, Peking University<br />2025.8–2026.8 Visiting Ph.D. Student Fellow，Rajawali Institute for Asia Fellowship, Ash Center, Harvard Kennedy School (forthcoming)</p>
   </div>
 
   <div class="section">
