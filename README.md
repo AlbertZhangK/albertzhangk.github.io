@@ -137,9 +137,11 @@
     <h2 class="en" style="display:none">Conference Presentations</h2>
     <ol>
       <li class="zh">《时间中的政治德性：马基雅维利的“永恒共和国”问题》，2023年12月9-10日，2023年政治思想史论坛｜中外政治思想史中的“君主镜鉴”传统，北京，北京大学政府管理学院。</li>
-      <li class="zh">《民主的边疆：托克维尔论美国的种族问题》，第四届“国家+”论坛——“边界/边疆”学术研讨会，2025年4月6日，昆明，北京大学中国政治学研究中心、云南民族大学政治与公共管理学院（人民武装学院）。</li>
+      <li class="zh">《民主的边疆：托克维尔论美国的种族问题》，第四届“国家+”论坛——“边界/边疆”学术研讨会，2025年4月6日，昆明，北京大学中国政治学研究中心、云南民族大学政治与公共管理学院。</li>
+      <li class="zh">《反权威时代的权威价值：托克维尔论超越性信仰与现代人的自由》，第十四届北京青年政治学论坛，2025年6月21-22日，北京，对外经济贸易大学。</li>
       <li class="en" style="display:none">“Political Virtues in Time: Machiavelli on ‘Perpetual Republic’”, December 9-10, 2023, 2023 Forum of Political Thoughts | The Tradition of “Mirror for Princes” in the History of Chinese and Foreign Political Thoughts, Peking University School of Government.</li>
       <li class="en" style="display:none">“The Frontier of Democracy: Tocqueville on the Problem of Race in America”, April 6, 2025, the Fourth “State+” Forum — Academic Workshop on “Boundary/Frontier”, Yunnan, co-hosted by the Center for Chinese Political Studies at Peking University and the School of Politics and Public Administration at Yunnan Minzu University.</li>
+      <li class="en" style="display:none">"The Value of Authority in an Anti-Authoritarian Age: Tocqueville on Transcendent Faith and the Freedom of Moderns,” The 14th Beijing Youth Forum of Political Science, June 21–22, 2025, Beijing, University of International Business and Economics.</li>
     </ol>
   </div>
 
