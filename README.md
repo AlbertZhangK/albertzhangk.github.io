@@ -95,7 +95,7 @@
         <p class="zh" style="display:none">张开，浙江缙云人，北京大学政府管理学院博士候选人，研究领域为政治理论和政治思想史。我的相关研究发表在《政治学研究》《北大政治学评论》《云南大学学报（社会科学版）》上。我博士论文的主题是托克维尔。我的学术旨趣分两点：其一，从西方近代以来的政治哲学史和思想史的视角，分析自由概念的演变，尤其是结合韦伯、施密特对现代国家、议会民主和官僚制的批判；其二，从批判理论的视角（并非当代激进左翼而更倾向于第一代法兰克福学派的批判理论脉络），分析现代社会的病理学，尤其是工具理性和精神性问题。宽泛来说，我对西方政治思想史都有一定兴趣。<br>
       在研究之外，我也是徒步、户外运动和电子游戏的爱好者，同时我也会在<a href="https://www.douban.com/people/191607649/?_i=3430470Q8VyQjq,4030924Q8VyQjq" target="_blank" rel="noopener noreferrer">豆瓣</a>上写作影评。</p>
       <p class="en">I am a Ph.D. candidate at the School of Government, Peking University and a visiting scholar at Harvard Kennedy School. My research interests lie in political theory and the history of political thought. My related publications in Chinese have appeared in CASS Journal of Political Science, Peking University Political Science Review, and The Journal of Yunnan University Social Sciences Edition. My doctoral dissertation examines Alexis de Tocqueville, liberalism, and the relationship between politics and religion. More broadly, my research interest is two-fold: first, tracing the ideas of liberty within the intellectual history of western political philosophy, particularly from the perspective of rationalisation of Weber and political theology of Schmitt; second, analysing the pathologies of modern society from the perspective of critical theory (mostly grounded in the tradition of Frankfurt School).<br>
-     In life, I am a huge fan of hiking (which might make me less nerdy:). I also enjoy writing film reviews and playing videogames. </p>
+     In life, I am a huge fan of hiking. I also enjoy writing film reviews and playing videogames. </p>
     </div>
   </div>
 
