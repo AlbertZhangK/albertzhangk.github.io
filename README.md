@@ -33,60 +33,16 @@
       text-decoration: underline;
     }
 
-    /* 顶部油画全屏背景 (Hero Section) */
-    .hero {
-      position: relative;
-      width: 100%;
-      height: 60vh; /* 占据屏幕60%的高度 */
-      min-height: 400px;
-      background-image: url('rs=w-800,cg-true.webp'); /* 你的油画 */
-      background-size: cover;
-      background-position: center 20%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    /* 背景遮罩，确保文字清晰 */
-    .hero-overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.4); 
-      z-index: 1;
-    }
-
-    /* 名字和头衔 */
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      color: white;
-    }
-
-    .hero-content h1 {
-      color: white;
-      font-size: 3rem;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-
-    .hero-content .subtitle {
-      font-size: 1.2rem;
-      font-style: italic;
-      opacity: 0.9;
-    }
-
-    /* 导航栏 */
+    /* 导航栏 - 放在最上面 */
     .navbar {
       position: relative;
-      z-index: 2;
+      z-index: 100; /* 确保在Hero Section上面 */
       width: 100%;
-      background: #222;
+      background: #333; /* 提升了对比度的背景色 */
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 15px 20px;
+      padding: 20px;
     }
 
     .nav-links {
@@ -95,10 +51,9 @@
     }
 
     .nav-links a {
-      color: #fff;
+      color: #fff; /* 提升了不选中时的对比度为纯白 */
       font-size: 1.1rem;
       cursor: pointer;
-      text-transform: uppercase;
       letter-spacing: 1px;
       transition: color 0.3s;
     }
@@ -126,9 +81,54 @@
       color: #222;
     }
 
-    /* 主体内容区 */
+    /* 顶部油画全屏背景 (Hero Section) */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 55vh; /* 占据屏幕55%的高度，为导航栏留出空间 */
+      min-height: 400px;
+      background-image: url('rs=w-800,cg-true.webp'); /* 你的油画 */
+      background-size: cover;
+      background-position: center 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* 背景遮罩，确保文字清晰 */
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4); 
+      z-index: 1;
+    }
+
+    /* 名字和头衔 */
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      margin-top: -20px; /* 调整垂直对齐 */
+    }
+
+    .hero-content h1 {
+      color: white;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content .subtitle {
+      font-size: 1.2rem;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    /* 主体内容区 - 拉大宽度 */
     .main-content {
-      max-width: 900px;
+      max-width: 1200px; /* 从900px增加到1200px */
       margin: 40px auto;
       padding: 0 20px;
       min-height: 40vh;
@@ -149,16 +149,21 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* 关于页面的排版 */
+    /* 关于页面的排版 - 用于PC端更大照片 */
     .about-layout {
       display: flex;
-      gap: 40px;
+      gap: 50px; /* 增加照片与文字的间距 */
       margin-bottom: 40px;
     }
 
-    .about-image {
-      flex-shrink: 0;
-      width: 200px;
+    /* 针对 About 页面照片排版调整 */
+    @media screen and (min-width: 769px) {
+      .about-image {
+        flex: 0 0 350px; /* PC端照片所在区域占据固定350px宽度 */
+      }
+      .about-text {
+        flex: 1; /* 文字占据剩余空间 */
+      }
     }
 
     .about-image img {
@@ -201,14 +206,6 @@
       color: #666;
     }
 
-    /* 针对其他页面的图片预留样式 */
-    .content-image-placeholder img {
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
-      border-radius: 4px;
-    }
-
     /* 移动端适配 */
     @media screen and (max-width: 768px) {
       .about-layout {
@@ -235,20 +232,14 @@
         flex-direction: column;
         gap: 15px;
       }
+      
+      .main-content {
+        max-width: 100%; /* 手机端拉满宽度 */
+      }
     }
   </style>
 </head>
 <body>
-
-  <header class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1 class="en">Kai Zhang</h1>
-      <h1 class="zh" style="display:none">张开</h1>
-      <p class="en subtitle">Ph.D. Candidate in Political Theory</p>
-      <p class="zh subtitle" style="display:none">政治理论博士候选人</p>
-    </div>
-  </header>
 
   <nav class="navbar">
     <div class="nav-links">
@@ -266,6 +257,16 @@
     <div class="lang-toggle" onclick="toggleLang()">中文</div>
   </nav>
 
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="en">Kai Zhang</h1>
+      <h1 class="zh" style="display:none">张开</h1>
+      <p class="en subtitle">Ph.D. Candidate in Political Theory</p>
+      <p class="zh subtitle" style="display:none">政治理论博士候选人</p>
+    </div>
+  </header>
+
   <main class="main-content">
     
     <section id="about" class="content-section active">
@@ -276,7 +277,7 @@
         
         <div class="about-text">
           <p>Email: <a href="mailto:albertk@pku.edu.cn">albertk@pku.edu.cn</a></p>
-          <br>
+          <br />
           <p class="zh" style="display:none">张开，浙江缙云人，北京大学政府管理学院博士候选人，研究领域为政治理论和政治思想史。我的相关研究发表在《政治学研究》《北大政治学评论》《云南大学学报（社会科学版）》上。我博士论文的主题是托克维尔。我的学术旨趣分两点：其一，从西方近代以来的政治哲学史和思想史的视角，分析自由概念的演变，尤其是结合韦伯、施密特对现代国家、议会民主和官僚制的批判；其二，从批判理论的视角（并非当代激进左翼而更倾向于第一代法兰克福学派的批判理论脉络），分析现代社会的病理学，尤其是工具理性和精神性问题。宽泛来说，我对西方政治思想史都有一定兴趣。</p>
           <p class="zh" style="display:none">在研究之外，我也是徒步、户外运动和电子游戏的爱好者，同时我也会在<a href="https://www.douban.com/people/191607649/?_i=3430470Q8VyQjq,4030924Q8VyQjq" target="_blank" rel="noopener noreferrer">豆瓣</a>上写作影评。</p>
           
@@ -287,8 +288,8 @@
 
       <h2 class="zh section-title" style="display:none">教育经历</h2>
       <h2 class="en section-title">Education</h2>
-      <p class="zh" style="display:none">2022.9- 博士研究生，北京大学政府管理学院<br>
-      2018.9-2022.7 法学学士，北京大学政府管理学院<br>
+      <p class="zh" style="display:none">2022.9- 博士研究生，北京大学政府管理学院<br />
+      2018.9-2022.7 法学学士，北京大学政府管理学院<br />
       2025.8-2026.8 访问学者，哈佛大学肯尼迪学院阿什中心</p>
       
       <p class="en">2022.9– Ph.D. Student, School of Government, Peking University<br />
@@ -330,7 +331,7 @@
         <li class="zh" style="display:none">《时间中的政治德性：马基雅维利的“永恒共和国”问题》，2023年12月9-10日，2023年政治思想史论坛｜中外政治思想史中的“君主镜鉴”传统，北京，北京大学政府管理学院。</li>
         <li class="zh" style="display:none">《民主的边疆：托克维尔论美国的种族问题》，第四届“国家+”论坛——“边界/边疆”学术研讨会，2025年4月6日，昆明，北京大学中国政治学研究中心、云南民族大学政治与公共管理学院。</li>
         <li class="zh" style="display:none">《反权威时代的权威价值：托克维尔论超越性信仰与现代人的自由》，第十四届北京青年政治学论坛，2025年6月21-22日，北京，对外经济贸易大学。</li>
-        <li class="zh" style="display:none">“Domination without a Dominator: Tocqueville on Political Pantheism and Democratic Despotism”, Annual Conference of Midwest Political Science Association, April 23, 2026, Chicago.</li>
+        <li class="zh" style="display:none">“Domination without a Dominator: Tocqueville on Political Pantheism and Democratic Despotism”, Annual Conference of Midwest Political Science Association, April 23, 2025, Chicago.</li>
         
         <li class="en">“Political Virtues in Time: Machiavelli on ‘Perpetual Republic’”, December 9-10, 2023, 2023 Forum of Political Thoughts | The Tradition of “Mirror for Princes” in the History of Chinese and Foreign Political Thoughts, Peking University School of Government.</li>
         <li class="en">“The Frontier of Democracy: Tocqueville on the Problem of Race in America”, April 6, 2025, the Fourth “State+” Forum — Academic Workshop on “Boundary/Frontier”, Yunnan, co-hosted by the Center for Chinese Political Studies at Peking University and the School of Politics and Public Administration at Yunnan Minzu University.</li>
@@ -351,7 +352,7 @@
       <h2 class="en section-title">Curriculum Vitae</h2>
       <p class="en">A full version of my CV is available upon request, or you can download a brief version below:</p>
       <p class="zh" style="display:none">如需完整简历请邮件联系，或在此下载简版：</p>
-      <br>
+      <br />
       <p><a href="#" target="_blank" style="font-weight: bold;">[Download CV PDF]</a></p>
     </section>
 
