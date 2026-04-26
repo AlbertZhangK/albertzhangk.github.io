@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -32,53 +31,51 @@
     a:hover {
       text-decoration: underline;
     }
-
-    /* 导航栏 - 放在最上面 */
+/* 1. 导航栏：背景色稍微调亮一点（#545e66），增加对比度，确保看清 */
     .navbar {
       position: relative;
-      z-index: 100; /* 确保在Hero Section上面 */
+      z-index: 100;
       width: 100%;
-      background: #333; /* 提升了对比度的背景色 */
+      background: #545e66; 
       display: flex;
-      justify-content: center;
+      justify-content: center; /* 核心：让 About/Research 等主目录保持在屏幕正中间 */
       align-items: center;
-      padding: 20px;
+      padding: 18px 40px;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 30px;
-    }
-
+    /* 2. 目录链接：字体加粗、字号调大，颜色改用更亮的浅灰色 (#e6e6e6) */
     .nav-links a {
-      color: #fff; /* 提升了不选中时的对比度为纯白 */
-      font-size: 1.1rem;
+      color: #e6e6e6; 
+      font-size: 1.2rem;
+      font-weight: bold;
       cursor: pointer;
       letter-spacing: 1px;
       transition: color 0.3s;
     }
 
     .nav-links a:hover, .nav-links a.active {
-      color: #aebfd0; /* 鼠标悬停和选中时的颜色 */
+      color: #ffffff; /* 选中或悬停时变为纯白 */
       text-decoration: none;
     }
 
-    /* 中英文切换按钮 */
+    /* 3. 中英文切换：去掉边框和背景，使其看起来就是一个普通的目录项，并固定在最右边 */
     .lang-toggle {
       position: absolute;
-      right: 20px;
+      right: 40px; /* 固定在导航栏的最右侧 */
       background: transparent;
-      color: #fff;
-      border: 1px solid #fff;
-      padding: 4px 10px;
+      color: #e6e6e6; /* 初始颜色与目录链接完全一致 */
+      border: none;
+      padding: 0;
       cursor: pointer;
-      font-size: 0.9rem;
-      transition: all 0.3s;
+      font-family: 'Georgia', serif; /* 保持相同的学术感字体 */
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s;
     }
 
     .lang-toggle:hover {
-      background: #fff;
-      color: #222;
+      color: #ffffff; /* 悬停时同样变纯白 */
+      background: transparent;
     }
 
     /* 顶部油画全屏背景 (Hero Section) */
@@ -277,6 +274,7 @@
         
         <div class="about-text">
           <p>Email: <a href="mailto:albertk@pku.edu.cn">albertk@pku.edu.cn</a></p>
+          <p>ORCID: <a href="https://orcid.org/0009-0003-8991-2945" target="_blank" rel="noopener noreferrer">0009-0003-8991-2945</a></p>
           <br />
           <p class="zh" style="display:none">张开，浙江缙云人，北京大学政府管理学院博士候选人，研究领域为政治理论和政治思想史。我的相关研究发表在《政治学研究》《北大政治学评论》《云南大学学报（社会科学版）》上。我博士论文的主题是托克维尔。我的学术旨趣分两点：其一，从西方近代以来的政治哲学史和思想史的视角，分析自由概念的演变，尤其是结合韦伯、施密特对现代国家、议会民主和官僚制的批判；其二，从批判理论的视角（并非当代激进左翼而更倾向于第一代法兰克福学派的批判理论脉络），分析现代社会的病理学，尤其是工具理性和精神性问题。宽泛来说，我对西方政治思想史都有一定兴趣。</p>
           <p class="zh" style="display:none">在研究之外，我也是徒步、户外运动和电子游戏的爱好者，同时我也会在<a href="https://www.douban.com/people/191607649/?_i=3430470Q8VyQjq,4030924Q8VyQjq" target="_blank" rel="noopener noreferrer">豆瓣</a>上写作影评。</p>
