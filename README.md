@@ -217,7 +217,7 @@
       .nav-links {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 20px;
       }
 
       .lang-toggle {
@@ -227,7 +227,7 @@
       
       .navbar {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
       }
       
       .main-content {
