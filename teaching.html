@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-language="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="张开 Kai Zhang 的教学页面。" />
+
+  <!-- 浏览器标签页和 Google 搜索结果标题：请保留这个顺序 -->
+  <title>张开 Kai Zhang</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">
+    <span class="lang zh">跳至正文</span>
+    <span class="lang en">Skip to main content</span>
+  </a>
+
+  <header class="site-header" id="top">
+    <a class="wordmark" href="index.html" aria-label="Home">
+      <span class="wordmark-cn">张开</span>
+      <span class="wordmark-rule" aria-hidden="true"></span>
+      <span class="wordmark-en">Kai Zhang</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">
+      <span class="lang zh">目录</span>
+      <span class="lang en">Menu</span>
+      <i aria-hidden="true"></i>
+    </button>
+
+    <nav class="main-nav" id="main-navigation" aria-label="Primary navigation">
+      <a href="index.html">
+        <span class="lang zh">关于</span><span class="lang en">About</span>
+      </a>
+      <a href="research.html">
+        <span class="lang zh">研究</span><span class="lang en">Research</span>
+      </a>
+      <a class="is-active" href="teaching.html" aria-current="page">
+        <span class="lang zh">教学</span><span class="lang en">Teaching</span>
+      </a>
+      <a href="beyond.html">
+        <span class="lang zh">研究之外</span><span class="lang en">Beyond Research</span>
+      </a>
+    </nav>
+
+    <button class="language-button" type="button" aria-label="Switch language">
+      <span class="language-choice is-current" data-choice="zh">中</span>
+      <i aria-hidden="true">/</i>
+      <span class="language-choice" data-choice="en">EN</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="page-masthead">
+      <p class="page-index">03 <span aria-hidden="true"></span> KAI ZHANG</p>
+      <h1><span class="lang zh">教学</span><span class="lang en">Teaching</span></h1>
+    </section>
+
+    <section class="content-page simple-page">
+      <!--
+        修改教学介绍：
+        直接替换下面两个段落中的文字即可。
+        第一个是中文版，第二个是英文版。
+      -->
+      <p class="simple-page-text lang zh">
+        我的教学兴趣包括西方政治思想史、现代政治理论、民主理论与宗教政治。具体课程与教学资料将在此更新。
+      </p>
+      <p class="simple-page-text lang en">
+        My teaching interests include the history of Western political thought, modern political theory,
+        democratic theory, and politics and religion. Information about courses and teaching materials will
+        be updated here.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-identity">
+      <span>张开</span>
+      <p>Kai Zhang</p>
+    </div>
+    <a class="footer-email" href="mailto:albertk@pku.edu.cn">albertk@pku.edu.cn</a>
+    <div class="footer-bottom">
+      <p>© <span class="current-year"></span> 张开 Kai Zhang</p>
+      <a href="#top"><span class="lang zh">返回顶部</span><span class="lang en">Back to top</span> ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
