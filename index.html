@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-language="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 浏览器和 Google 搜索结果中的标题：请保持这一行 -->
+  <title>张开 Kai Zhang</title>
+
+  <!-- 可修改为你希望 Google 展示的网站简介 -->
+  <meta
+    name="description"
+    content="张开，北京大学政府管理学院博士候选人，博士论文的主题是托克维尔。Kai Zhang, Ph.D. candidate at the School of Government, Peking University."
+  />
+  <meta name="author" content="张开 Kai Zhang" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">
+    <span class="lang zh">跳至正文</span>
+    <span class="lang en">Skip to main content</span>
+  </a>
+
+  <!-- 顶部导航：如果要增加页面，请在所有 HTML 文件中同步修改 -->
+  <header class="site-header" id="top">
+    <a class="wordmark" href="index.html" aria-label="Home">
+      <span class="wordmark-cn">张开</span>
+      <span class="wordmark-rule" aria-hidden="true"></span>
+      <span class="wordmark-en">Kai Zhang</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">
+      <span class="lang zh">目录</span>
+      <span class="lang en">Menu</span>
+      <i aria-hidden="true"></i>
+    </button>
+
+    <nav class="main-nav" id="main-navigation" aria-label="Primary navigation">
+      <a class="is-active" href="index.html">
+        <span class="lang zh">关于</span><span class="lang en">About</span>
+      </a>
+      <a href="research.html">
+        <span class="lang zh">研究</span><span class="lang en">Research</span>
+      </a>
+      <a href="teaching.html">
+        <span class="lang zh">教学</span><span class="lang en">Teaching</span>
+      </a>
+    </nav>
+
+    <button class="language-button" type="button" aria-label="Switch language">
+      <span class="language-choice is-current" data-choice="zh">中</span>
+      <i aria-hidden="true">/</i>
+      <span class="language-choice" data-choice="en">EN</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="home-page">
+      <div class="home-about">
+
+        <!-- 横向个人照片：把约 3:2 比例的 portrait.jpg 放入 images 文件夹即可 -->
+        <figure class="home-portrait">
+          <div class="home-image-frame portrait-image">
+            <div class="portrait-placeholder" aria-hidden="true">
+              <span>PHOTO</span>
+              <small>FORTHCOMING</small>
+            </div>
+            <img
+              src="images/portrait.jpg"
+              alt="张开在山中 / Kai Zhang in the mountains"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <figcaption>
+            <!-- 修改邮箱：同时修改 href 中 mailto: 后的地址和显示文字 -->
+            <a href="mailto:albertk@pku.edu.cn">
+              albertk@pku.edu.cn <span aria-hidden="true">↗</span>
+            </a>
+          </figcaption>
+        </figure>
+
+        <!-- 个人介绍：中文和英文分别修改 -->
+        <div class="home-about-copy">
+          <div class="lang zh">
+            <p>
+              张开，浙江缙云人，北京大学政府管理学院博士候选人，研究领域为政治理论和政治思想史。我的相关研究发表在《政治学研究》《北大政治学评论》《云南大学学报（社会科学版）》上。我博士论文的主题是托克维尔。我的学术旨趣分两点：其一，从西方近代以来的政治哲学史和思想史的视角，分析自由概念的演变，尤其是结合韦伯、施密特对现代国家、议会民主和官僚制的批判；其二，从批判理论的视角（并非当代激进左翼而更倾向于第一代法兰克福学派的批判理论脉络），分析现代社会的病理学，尤其是工具理性和精神性问题。宽泛来说，我对西方政治思想史都有一定兴趣。
+            </p>
+            <p>
+              平时我也喜欢徒步和户外运动，同时会在豆瓣上写作影评。
+            </p>
+          </div>
+
+          <div class="lang en">
+            <p>
+              Kai Zhang is a Ph.D. candidate at the School of Government, Peking University and was a visiting Ph.D. fellow at the Ash Center, Harvard Kennedy School. His research interests lie in political theory and the history of political thought. His doctoral dissertation examines Alexis de Tocqueville, liberalism, and the relationship between politics and religion. More broadly, his research interests are two-fold: first, tracing ideas of liberty within the intellectual history of Western political philosophy, particularly from the perspective of Weber’s rationalization and Schmitt’s political theology; second, analyzing the pathologies of modern society from the perspective of critical theory, mostly grounded in the tradition of the Frankfurt School.
+            </p>
+            <p>
+              I also enjoy hiking and outdoor sports, and write film reviews on Douban.
+            </p>
+          </div>
+        </div>
+
+        <div class="home-details">
+          <!-- 教育经历：复制一个 li 就能增加一项 -->
+          <section>
+            <h2><span class="lang zh">教育经历</span><span class="lang en">Education</span></h2>
+            <ol class="compact-list">
+              <li>
+                <time>2022–2027</time>
+                <p class="lang zh">博士研究生，北京大学政府管理学院</p>
+                <p class="lang en">Ph.D. Student, School of Government, Peking University</p>
+              </li>
+              <li>
+                <time>2025–2026</time>
+                <p class="lang zh">访问博士研究员，哈佛大学肯尼迪学院阿什中心</p>
+                <p class="lang en">Visiting Ph.D. Fellow, Ash Center, Harvard Kennedy School</p>
+              </li>
+              <li>
+                <time>2018–2022</time>
+                <p class="lang zh">法学学士，北京大学政府管理学院</p>
+                <p class="lang en">B.A. in Politics and Public Administration, Peking University</p>
+              </li>
+            </ol>
+          </section>
+
+          <!-- 语言能力 -->
+          <section>
+            <h2><span class="lang zh">语言能力</span><span class="lang en">Languages</span></h2>
+            <ul class="compact-language-list lang zh">
+              <li><span>汉语</span><em>母语</em></li>
+              <li><span>英语</span><em>流利</em></li>
+              <li><span>法语</span><em>熟练</em></li>
+            </ul>
+            <ul class="compact-language-list lang en">
+              <li><span>Chinese</span><em>Native</em></li>
+              <li><span>English</span><em>Fluent</em></li>
+              <li><span>French</span><em>Proficient</em></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <!-- 罗马油画：替换图片时保持文件名，或者修改下面的 src -->
+      <figure class="home-roman">
+        <div class="home-image-frame roman-image">
+          <img
+            src="images/cincinnatus-rome.jpg"
+            alt="Cincinnatus Abandons the Plough to Dictate Laws to Rome"
+          />
+          <span class="image-label">ROMAN REPUBLIC · 1806</span>
+        </div>
+        <figcaption>
+          <!--
+            中英文 CV 分开设置：
+
+            中文版：
+            1. 把 Kai-Zhang-CV-ZH.pdf 放在网站根目录；
+            2. 删除中文的“PDF 待上传”；
+            3. 取消中文 a 标签的注释。
+
+            English version:
+            1. Put Kai-Zhang-CV-EN.pdf in the website root;
+            2. Delete the English “PDF forthcoming” line;
+            3. Uncomment the English a element.
+          -->
+          <div class="lang zh">
+            <!-- <a href="Kai-Zhang-CV-ZH.pdf" target="_blank">中文简历 <span aria-hidden="true">↗</span></a> -->
+            <span class="pending-link">中文简历 · PDF 待上传</span>
+          </div>
+          <div class="lang en">
+            <!-- <a href="Kai-Zhang-CV-EN.pdf" target="_blank">Curriculum Vitae <span aria-hidden="true">↗</span></a> -->
+            <span class="pending-link">CV · PDF forthcoming</span>
+          </div>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-identity">
+      <span>张开</span>
+      <p>Kai Zhang</p>
+    </div>
+    <a class="footer-email" href="mailto:albertk@pku.edu.cn">albertk@pku.edu.cn</a>
+    <div class="footer-bottom">
+      <p>© <span class="current-year"></span> 张开 Kai Zhang</p>
+      <a href="#top"><span class="lang zh">返回顶部</span><span class="lang en">Back to top</span> ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
