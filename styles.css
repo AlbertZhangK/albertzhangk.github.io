@@ -20,7 +20,6 @@
   --moss: #202821;
   --moss-deep: #11150f;
   --brick: #984433;
-  --brick-dark: #703125;
   --rule: rgba(24, 25, 20, 0.2);
 
   --serif: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC",
@@ -176,7 +175,7 @@ html[data-language="en"] .lang.en {
 .wordmark-en {
   font-family: var(--display);
   font-size: 0.84rem;
-  font-style: italic;
+  font-style: normal;
 }
 
 .main-nav {
@@ -268,12 +267,12 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 }
 
 .home-portrait {
-  width: clamp(145px, 13vw, 178px);
-  margin-bottom: 23px;
+  width: min(100%, 680px);
+  margin-bottom: 27px;
 }
 
 .home-portrait .home-image-frame {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 2;
 }
 
 .home-image-frame {
@@ -304,6 +303,7 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 .portrait-image > img {
   position: absolute;
   inset: 0;
+  object-position: center;
 }
 
 /* 未放入个人照片时显示的占位框 */
@@ -328,7 +328,7 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 .portrait-placeholder span {
   font-family: var(--display);
   font-size: 1rem;
-  font-style: italic;
+  font-style: normal;
   letter-spacing: 0.18em;
 }
 
@@ -384,10 +384,10 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 }
 
 .compact-list time,
-.compact-language-list em {
+.language-level {
   color: var(--ink-soft);
   font-family: var(--display);
-  font-style: italic;
+  font-style: normal;
 }
 
 .compact-language-list li {
@@ -453,47 +453,7 @@ html[data-language="en"] .language-choice[data-choice="en"] {
   color: var(--ink-soft);
 }
 
-/* ==========================================================
-内页公共标题
-标题区刻意保持紧凑，进入页面即可看到正文。
-========================================================== */
-
-.page-masthead {
-  display: grid;
-  grid-template-columns: minmax(130px, 0.28fr) 1fr;
-  align-items: center;
-  min-height: 148px;
-  padding: 27px clamp(28px, 6vw, 94px);
-  color: var(--paper-bright);
-  background:
-    linear-gradient(125deg, rgba(255, 255, 255, 0.025), transparent 48%),
-    var(--moss);
-}
-
-.page-index {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-family: var(--display);
-  font-size: 0.61rem;
-  letter-spacing: 0.16em;
-  opacity: 0.65;
-}
-
-.page-index span {
-  width: 34px;
-  height: 1px;
-  background: currentColor;
-}
-
-.page-masthead h1 {
-  font-family: var(--serif);
-  font-size: clamp(2.35rem, 4.1vw, 3.8rem);
-  font-weight: 400;
-  letter-spacing: -0.035em;
-  line-height: 1;
-}
-
+/* 内页直接进入正文，避免重复标题占据首屏。 */
 .content-page {
   padding: clamp(40px, 5vw, 62px) clamp(28px, 6vw, 94px);
 }
@@ -512,7 +472,7 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 }
 
 .research-list-section + .research-list-section {
-  margin-top: clamp(46px, 5vw, 68px);
+  margin-top: clamp(28px, 3vw, 40px);
 }
 
 .list-heading {
@@ -528,12 +488,6 @@ html[data-language="en"] .language-choice[data-choice="en"] {
   font-size: clamp(1.45rem, 2.2vw, 2.25rem);
   font-weight: 400;
   font-style: normal;
-}
-
-.list-heading > span {
-  color: var(--brick);
-  font-family: var(--display);
-  font-size: 0.7rem;
 }
 
 .publication-list li {
@@ -569,12 +523,27 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 
 /*
 研究页面的引用规范：
-正文、论文题目和会议名称均为正体；
-只有 HTML 中明确写成 <em>...</em> 的刊物名称使用斜体。
+作者、年份、论文题目、工作论文与会议名称均为正体；
+只有 .journal-title 标记的英文刊物名称使用斜体。
+中文刊名依照中文规范使用书名号并保持正体。
 */
-.publication-list p em,
-.conference-list p em {
+.journal-title {
   font-style: italic;
+}
+
+.journal-title-zh {
+  font-style: normal;
+}
+
+.publication-list a {
+  border-bottom: 1px solid rgba(152, 68, 51, 0.55);
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.publication-list a:hover,
+.publication-list a:focus-visible {
+  color: var(--brick);
+  border-color: var(--brick);
 }
 
 .conference-list li {
@@ -583,6 +552,10 @@ html[data-language="en"] .language-choice[data-choice="en"] {
   gap: 26px;
   padding: 16px 0;
   border-bottom: 1px solid var(--rule);
+}
+
+.working-paper-list li {
+  grid-template-columns: 1fr;
 }
 
 /* ==========================================================
@@ -622,7 +595,7 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 .footer-identity p {
   font-family: var(--display);
   font-size: 0.88rem;
-  font-style: italic;
+  font-style: normal;
 }
 
 .footer-email {
@@ -652,8 +625,7 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 html[data-language="en"] .home-about-copy p,
 html[data-language="en"] .publication-list p,
 html[data-language="en"] .conference-list p,
-html[data-language="en"] .simple-page > p,
-html[data-language="en"] .beyond-page p {
+html[data-language="en"] .simple-page > p {
   font-size: 0.96rem;
   line-height: 1.68;
 }
@@ -733,17 +705,6 @@ button:focus-visible {
     gap: 20px;
   }
 
-  .beyond-page {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .beyond-page article:first-child {
-    grid-column: 1 / -1;
-  }
-
-  .beyond-page article:nth-child(2) {
-    border-left: 0;
-  }
 }
 
 @media (max-width: 860px) {
@@ -840,8 +801,8 @@ button:focus-visible {
   }
 
   .home-portrait {
-    width: min(44vw, 170px);
-    margin-bottom: 22px;
+    width: 100%;
+    margin-bottom: 25px;
   }
 
   .home-portrait figcaption,
@@ -855,23 +816,12 @@ button:focus-visible {
     letter-spacing: 0.1em;
   }
 
-  .page-masthead {
-    grid-template-columns: 1fr;
-    gap: 16px;
-    min-height: 0;
-    padding: 24px 20px 27px;
-  }
-
-  .page-masthead h1 {
-    font-size: clamp(2.25rem, 11vw, 3.2rem);
-  }
-
   .content-page {
     padding: 36px 20px 48px;
   }
 
   .research-list-section + .research-list-section {
-    margin-top: 48px;
+    margin-top: 30px;
   }
 
   .publication-list li {
@@ -893,25 +843,6 @@ button:focus-visible {
   .conference-list li {
     grid-template-columns: 62px 1fr;
     gap: 15px;
-  }
-
-  .beyond-page {
-    grid-template-columns: 1fr;
-    padding: 36px 20px 48px;
-  }
-
-  .beyond-page article:first-child {
-    grid-column: auto;
-  }
-
-  .beyond-page article {
-    min-height: 0;
-    padding: 24px 22px 29px;
-  }
-
-  .beyond-page article + article {
-    border-top: 0;
-    border-left: 0;
   }
 
   .site-footer {

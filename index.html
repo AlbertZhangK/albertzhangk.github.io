@@ -60,7 +60,7 @@
     <section class="home-page">
       <div class="home-about">
 
-        <!-- 横向个人照片：把约 3:2 比例的 portrait.jpg 放入 images 文件夹即可 -->
+        <!-- 横向个人照片：使用网站根目录中的 3:2 portrait.jpg -->
         <figure class="home-portrait">
           <div class="home-image-frame portrait-image">
             <div class="portrait-placeholder" aria-hidden="true">
@@ -68,7 +68,7 @@
               <small>FORTHCOMING</small>
             </div>
             <img
-              src="images/portrait.jpg"
+              src="portrait.jpg"
               alt="张开在山中 / Kai Zhang in the mountains"
               onerror="this.style.display='none'"
             />
@@ -129,14 +129,14 @@
           <section>
             <h2><span class="lang zh">语言能力</span><span class="lang en">Languages</span></h2>
             <ul class="compact-language-list lang zh">
-              <li><span>汉语</span><em>母语</em></li>
-              <li><span>英语</span><em>流利</em></li>
-              <li><span>法语</span><em>熟练</em></li>
+              <li><span>汉语</span><span class="language-level">母语</span></li>
+              <li><span>英语</span><span class="language-level">流利</span></li>
+              <li><span>法语</span><span class="language-level">熟练</span></li>
             </ul>
             <ul class="compact-language-list lang en">
-              <li><span>Chinese</span><em>Native</em></li>
-              <li><span>English</span><em>Fluent</em></li>
-              <li><span>French</span><em>Proficient</em></li>
+              <li><span>Chinese</span><span class="language-level">Native</span></li>
+              <li><span>English</span><span class="language-level">Fluent</span></li>
+              <li><span>French</span><span class="language-level">Proficient</span></li>
             </ul>
           </section>
         </div>
@@ -152,26 +152,16 @@
           <span class="image-label">ROMAN REPUBLIC · 1806</span>
         </div>
         <figcaption>
-          <!--
-            中英文 CV 分开设置：
-
-            中文版：
-            1. 把 Kai-Zhang-CV-ZH.pdf 放在网站根目录；
-            2. 删除中文的“PDF 待上传”；
-            3. 取消中文 a 标签的注释。
-
-            English version:
-            1. Put Kai-Zhang-CV-EN.pdf in the website root;
-            2. Delete the English “PDF forthcoming” line;
-            3. Uncomment the English a element.
-          -->
+          <!-- 中文和英文页面分别链接各自的 CV -->
           <div class="lang zh">
-            <!-- <a href="Kai-Zhang-CV-ZH.pdf" target="_blank">中文简历 <span aria-hidden="true">↗</span></a> -->
-            <span class="pending-link">中文简历</span>
+            <a href="Kai-Zhang-CV-ZH.pdf" target="_blank" rel="noopener noreferrer">
+              中文简历 <span aria-hidden="true">↗</span>
+            </a>
           </div>
           <div class="lang en">
-            <!-- <a href="Kai-Zhang-CV-EN.pdf" target="_blank">Curriculum Vitae <span aria-hidden="true">↗</span></a> -->
-            <span class="pending-link">CV</span>
+            <a href="CV%20Kai%20Zhang%20EN.pdf" target="_blank" rel="noopener noreferrer">
+              Curriculum Vitae <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </figcaption>
       </figure>

@@ -18,7 +18,7 @@
 
   function readSavedLanguage() {
     try {
-      return window.localStorage.getItem("kai-zhang-language");
+      return window.sessionStorage.getItem("kai-zhang-language");
     } catch (error) {
       return null;
     }
@@ -26,7 +26,7 @@
 
   function saveLanguage(language) {
     try {
-      window.localStorage.setItem("kai-zhang-language", language);
+      window.sessionStorage.setItem("kai-zhang-language", language);
     } catch (error) {
       /* 浏览器禁止本地存储时，网站仍然可以正常使用。 */
     }
@@ -46,6 +46,10 @@
     saveLanguage(nextLanguage);
   }
 
+  /*
+    新打开网站时默认中文；
+    同一标签页中主动切换到英文后，翻页仍保持英文。
+  */
   setLanguage(readSavedLanguage() === "en" ? "en" : "zh");
 
   if (languageButton) {
