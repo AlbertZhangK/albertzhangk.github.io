@@ -514,11 +514,13 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 
 .publication-list p,
 .conference-list p {
+  min-width: 0;
   max-width: 1080px;
   font-family: var(--serif);
   font-size: 0.96rem;
   line-height: 1.64;
   font-style: normal;
+  overflow-wrap: break-word;
 }
 
 /*
@@ -548,14 +550,15 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 
 .conference-list li {
   display: grid;
-  grid-template-columns: 95px 1fr;
+  grid-template-columns: 95px minmax(0, 1fr);
   gap: 26px;
   padding: 16px 0;
   border-bottom: 1px solid var(--rule);
 }
 
-.working-paper-list li {
-  grid-template-columns: 1fr;
+.conference-list.working-paper-list > li {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
 }
 
 /* ==========================================================
@@ -642,7 +645,8 @@ button:focus-visible {
 
 @media (max-width: 1120px) {
   .site-header {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    column-gap: clamp(12px, 2vw, 24px);
   }
 
   .main-nav {
@@ -671,6 +675,8 @@ button:focus-visible {
     display: flex;
     align-items: center;
     gap: 11px;
+    grid-column: 3;
+    grid-row: 1;
     justify-self: end;
     padding: 8px 0;
     border: 0;
@@ -689,8 +695,10 @@ button:focus-visible {
   }
 
   .language-button {
-    position: absolute;
-    right: clamp(90px, 13vw, 140px);
+    position: static;
+    right: auto;
+    grid-column: 2;
+    grid-row: 1;
   }
 
   .home-page {
@@ -775,7 +783,8 @@ button:focus-visible {
   }
 
   .language-button {
-    right: 55px;
+    position: static;
+    right: auto;
   }
 
   .home-page {
@@ -841,8 +850,17 @@ button:focus-visible {
   }
 
   .conference-list li {
-    grid-template-columns: 62px 1fr;
+    grid-template-columns: 62px minmax(0, 1fr);
     gap: 15px;
+  }
+
+  /*
+  工作论文没有年份列。这里必须覆盖上方的会议列表双栏规则，
+  否则正文会被自动放进 62px 的第一列，造成几乎逐词换行。
+  */
+  .conference-list.working-paper-list > li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
   }
 
   .site-footer {
