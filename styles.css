@@ -1,13 +1,14 @@
 /*
-  张开 Kai Zhang 个人网站
-  ============================================================
-  这是全站唯一的样式文件。通常你只需要修改 HTML 文字和图片。
+张开 Kai Zhang 个人网站
+=================
 
-  如果要微调视觉，最常修改的是下方 :root 中的：
-  --paper      页面背景
-  --ink        正文颜色
-  --brick      强调色
-  --moss       内页标题背景
+这是全站唯一的样式文件。通常你只需要修改 HTML 文字和图片。
+
+如果要微调视觉，最常修改的是下方 :root 中的：
+--paper      页面背景
+--ink        正文颜色
+--brick      强调色
+--moss       内页标题背景
 */
 
 :root {
@@ -102,8 +103,8 @@ img {
 }
 
 /*
-  中文默认显示。
-  script.js 会把 data-language 从 zh 改为 en。
+中文默认显示。
+script.js 会把 data-language 从 zh 改为 en。
 */
 .lang.en {
   display: none;
@@ -133,8 +134,8 @@ html[data-language="en"] .lang.en {
 }
 
 /* ==========================================================
-   顶部导航
-   ========================================================== */
+顶部导航
+========================================================== */
 
 .site-header {
   position: sticky;
@@ -250,8 +251,8 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 }
 
 /* ==========================================================
-   首页
-   ========================================================== */
+首页
+========================================================== */
 
 .home-page {
   display: grid;
@@ -453,9 +454,9 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 }
 
 /* ==========================================================
-   内页公共标题
-   标题区刻意保持紧凑，进入页面即可看到正文。
-   ========================================================== */
+内页公共标题
+标题区刻意保持紧凑，进入页面即可看到正文。
+========================================================== */
 
 .page-masthead {
   display: grid;
@@ -498,8 +499,8 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 }
 
 /* ==========================================================
-   研究
-   ========================================================== */
+研究
+========================================================== */
 
 .research-page {
   padding-top: clamp(36px, 4vw, 52px);
@@ -526,6 +527,7 @@ html[data-language="en"] .language-choice[data-choice="en"] {
   font-family: var(--serif);
   font-size: clamp(1.45rem, 2.2vw, 2.25rem);
   font-weight: 400;
+  font-style: normal;
 }
 
 .list-heading > span {
@@ -553,7 +555,7 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 .conference-list time {
   font-family: var(--display);
   font-size: 0.86rem;
-  font-style: italic;
+  font-style: normal;
 }
 
 .publication-list p,
@@ -562,6 +564,17 @@ html[data-language="en"] .language-choice[data-choice="en"] {
   font-family: var(--serif);
   font-size: 0.96rem;
   line-height: 1.64;
+  font-style: normal;
+}
+
+/*
+研究页面的引用规范：
+正文、论文题目和会议名称均为正体；
+只有 HTML 中明确写成 <em>...</em> 的刊物名称使用斜体。
+*/
+.publication-list p em,
+.conference-list p em {
+  font-style: italic;
 }
 
 .conference-list li {
@@ -573,8 +586,8 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 }
 
 /* ==========================================================
-   教学
-   ========================================================== */
+教学
+========================================================== */
 
 .simple-page {
   min-height: 42vh;
@@ -588,8 +601,8 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 }
 
 /* ==========================================================
-   页脚
-   ========================================================== */
+页脚
+========================================================== */
 
 .site-footer {
   display: grid;
@@ -634,7 +647,7 @@ html[data-language="en"] .language-choice[data-choice="en"] {
 }
 
 /*
-  英文统一字号与行距，避免局部忽大忽小。
+英文统一字号与行距，避免局部忽大忽小。
 */
 html[data-language="en"] .home-about-copy p,
 html[data-language="en"] .publication-list p,
@@ -652,8 +665,8 @@ button:focus-visible {
 }
 
 /* ==========================================================
-   平板
-   ========================================================== */
+平板
+========================================================== */
 
 @media (max-width: 1120px) {
   .site-header {
@@ -760,8 +773,8 @@ button:focus-visible {
 }
 
 /* ==========================================================
-   手机
-   ========================================================== */
+手机
+========================================================== */
 
 @media (max-width: 620px) {
   html {
